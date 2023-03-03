@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock | by Sarah Ossai</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="script.js" defer></script>
+    <script src="date.js" defer></script>
+
+</head>
+<body>
+    <!-- Button to switch between clocks -->
+     <header>
+        <div class="switch-clock">
+            <button onclick="toggleMode()" id="mode-button">
+                <span class="material-symbols-outlined">
+                    dark_mode
+                    </span></button>
+                    
+            <a href="analog.html"><button class="btn-switch">Switch to Analog</button></a>
+         </div>
+
+         <h1 style="text-align:center;">Digital Clock</h1>
+     </header>
+     <!-- The digital clock content -->
+     <div class="digitalCont clock">
+        <div class="hour-min">
+            <p id="hour"></p>
+            <p>:</p>
+            <p id="min"></p>
+        </div>
+        <div class="seconds">
+            <p id="sec"></p>
+        </div>
+     </div>
+         <!-- set current date -->
+     
+         <div class="fullDate">
+            <p class="day"></p>
+            <p class="month"></p>
+            <p class="year"></p>
+        </div>
+     <footer>
+        <p>Coded by Sarah Ossai</p>
+     </footer>
+</body>
+</html>
